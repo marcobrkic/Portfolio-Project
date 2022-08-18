@@ -171,6 +171,10 @@ section#learn-section div {
     
 }
 
+section#learn-section div:hover {
+    border: 6px solid white;
+}
+
 section#learn-section div h2 {
     margin: 10px 10px;
     text-align: center;
@@ -446,6 +450,5 @@ footer ul li a {
 
 /* LARGE TABLET */
 @media screen and (max-width: 1200px) {
-
 
 }
