@@ -12,7 +12,9 @@
 
     <link rel="stylesheet" href="css/styles.css">
 
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -20,10 +22,10 @@
 
     <header>
 
-        <h2>Marco Brkic</h2>
+        <h2><i>Marco Brkic</i></h2>
 
         <nav>
-           
+
             <ul>
                 <li><a href="#about-section">About</a></li>
                 <li><a href="#work-section">Work</a></li>
@@ -37,27 +39,126 @@
 
         <section id="intro-section" class="full-size-section">
 
+            <h1>
+                Student vom DCI Düsseldorf im Bereich Web-Development
+            </h1>
+
+            <a href="#work-section">
+                <div class="hover-button">
+                    <span>Meine bisherige Arbeit</span>
+                </div>
+            </a>
+
+        </section>
+
+        <section id="learn-section" class="full-size-section">
+
             <div>
-
-                
-
+                <h2>Skills</h2>
+                <ul>
+                    <li>Linux Bash</li>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>CSS Animation</li>
+                    <li>CSS Responsiveness</li>
+                    <li>Flexbox</li>
+                    <li>SASS</li>
+                </ul>
             </div>
+            
 
         </section>
 
         <section id="about-section" class="full-size-section">
 
 
+            <div id="about-img" class="half-wide-content">
+
+
+            </div>
+
+            <div class="half-wide-content text-content">
+
+                <h2>Über Mich</h2>
+
+                <h3>Web-Developer</h3>
+
+                <p>
+                    Hallo, ich bin Marco Brkic, komme aus Düsseldorf und bin 41 Jahre alt.
+                    Aktuell bin ich Student beim DCI im Bereich Web-Development und stehe kurz vor Abschluss des
+                    Bereiches (UIB) User Interface Basics.
+                    Das Programmieren macht eine Menge Spass und ist eine ganz neue Herausforderung für mich.
+                    Man lernt viel Neues und ich freue mich darauf mein erlerntes Wissen in naher Zukunft durch ein
+                    Praktikum zu vertiefen und anzuwenden.
+                    Vor meiner Zeit beim DCI war ich selbstständig im Bereich Lichttechnik beschäftigt,
+                    habe Konzerte, Messen, Festivals und Theaterstücke begleitet und aufgebaut.
+                
+
+                </p>
+
+
+
+            </div>
+
 
         </section>
 
         <section id="work-section" class="full-size-section">
+
+            <h2>Meine bisherigen Projekte</h2>
+
+            <div id="exhibition-grid">
+
+                <div class="exhibition-item">
+                    <a href="workexamples/keyframing-mario/index.html" target="_blank" rel="noopener noreferrer">
+                        <h4>Keyframing Mario</h4>
+                    </a>
+                </div>
+                
+                <div class="exhibition-item">
+                    <a href="workexamples/chessboard-marcobrkic/index.html" target="_blank" rel="noopener noreferrer">
+                        <h4>Chessboard</h4>
+                    </a>
+                </div>
+                
+                <div class="exhibition-item">
+                    <a href="workexamples/neumorphic-music-player-marcobrkic/index.html" target="_blank" rel="noopener noreferrer">
+                        <h4>Neumorphic-Player</h4>
+                    </a>
+                </div>
+                
+
+            </div>
 
 
 
         </section>
 
         <section id="contact-section" class="full-size-section">
+
+            <h3>Kontakt</h3>
+
+
+            <a href="mailto:m19brkic81@googlemail.com">m19brkic81@googlemail.com</a>
+
+            <form id="contact-form">
+                <fieldset>
+                    <label for="contact-name">Your name</label>
+                    <input type="text" id="contact-name">
+                </fieldset>
+                <fieldset>
+                    <label for="contact-email">Your e-mail address</label>
+                    <input type="email" id="contact-email">
+                </fieldset>
+                <fieldset>
+                    <label for="contact-message">Your message to us</label>
+                    <textarea id="contact-message" cols="30" rows="10"></textarea>
+                </fieldset>
+
+               
+
+                <button>Submit</button>
+            </form>
 
 
 
@@ -68,6 +169,16 @@
 
     <footer>
 
+        <ul>
+            <li><a href="https://github.com/marcobrkic" target="_blank" rel="noopener noreferrer">Github-Marco-Brkic</a>
+            </li>
+            <li><a href="https://www.xing.com/Profile/Marco_Brkic/cv" target="_blank"
+                    rel="noopener noreferrer">Xing-Kontakt</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+
+            <li>Impressum</li>
+
+        </ul>
 
 
     </footer>

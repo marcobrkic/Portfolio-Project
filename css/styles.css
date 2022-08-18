@@ -13,25 +13,32 @@
 /* Scroll-Verhalten fuer ganzes Html smooth */
 html {
     scroll-behavior: smooth;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,27,88,1) 35%, rgba(0,212,255,1) 100%);
+   
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,27,88,1) 35%, rgb(119, 153, 160) 100%);
 }
 
 /* h2 im header positioniert */
 header h2 {
-    width: 90%;
-    margin-left: 50px;
+    width: 50%;
+    font-size: 24pt;
+}
+
+header h2::before {
+    font-family: "FontAwesome";
+    content: "\f259";
 }
 
 /* Header-Nav-Einstellungen */
 
 header {
-    width: 100vw;
-    height: 10vh;
+    width: 100%;
+    padding: 1em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -39,6 +46,8 @@ header {
     top: 0;
     left: 0;
     color: white;
+    z-index: 99;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,27,88,1) 35%, rgb(63, 96, 102) 100%);
 }
 
 nav {
@@ -65,15 +74,378 @@ nav ul a:hover {
 
 /* Main-Bereich */
 
-/* Main bereich zentriert */
+/* Main Bereich zentriert */
 main {
     width: 100%;
     margin: 0 auto;
     
 }
 
-/* alle Sections auf volle Breite und Höhe geaetzt */
+
+
+/*  Sections auf volle Breite und Höhe gesetzt */
 section.full-size-section {
     width: 100%;
     height: 100vh;
+}
+
+#intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#intro-section h1 {
+    max-width: 8em;
+    font-size: 50pt;
+    text-align: center;
+    margin-bottom: 0.4em;
+}
+
+section#intro-section a {
+    text-decoration: none;
+    color: white;
+}
+
+div.hover-button {
+    border: 2px solid white;
+    padding: 1.5em 1em;
+    border-radius: 10px;
+}
+
+div.hover-button:hover {
+    border: 4px solid white;
+}
+
+section#about-section {
+    display: flex;
+
+    
+}
+
+div.half-wide-content {
+    width: 50%;
+    height: 100%;
+}
+
+div.text-content {
+    padding-left: 5em;
+    padding-right: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+h3 {
+    font-size: 40pt;
+    margin-bottom: 0.2em;
+}
+
+section#about-section div#about-img {
+    background-image: url(../img/967388_transformers-decepticons-logo-wallpaper-images_1203x942_h.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Learn-Section */
+
+
+section#learn-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section#learn-section div {
+    border: 2px solid white;
+    border-radius: 10px;
+    
+}
+
+section#learn-section div h2 {
+    margin: 10px 10px;
+    text-align: center;
+}
+
+section#learn-section li {
+    margin: 30px;
+    list-style: none;
+    text-align: center;
+}
+
+/* Work-section */
+
+section#work-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#work-section h2 {
+    font-size: 30pt;
+    margin-bottom: 1em;
+}
+
+div#exhibition-grid {
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+
+}
+
+div.exhibition-item {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.exhibition-item a {
+    font-size: 20pt;
+    font-weight: 100;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: #12153f;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    /* Animiere hover */
+    transition: all 0.6s ease-in-out;
+}
+
+div.exhibition-item:hover a {
+    /* Setze Deckkraft auf 0 */
+    opacity: 0;
+}
+
+div#exhibition-grid div.exhibition-item:nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: span 2;
+    background-image: url(../img/mario.png);
+    background-size: cover;
+}
+
+div#exhibition-grid div.exhibition-item:nth-child(2) {
+    background-image: url(../img/chessboard.png);
+    
+    background-size: cover;
+    background-position: center;
+}
+
+
+div#exhibition-grid div.exhibition-item:nth-child(3) {
+    
+    background-image: url(../img/reference-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+section#contact-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+
+section#contact-section p {
+    font-size: 18pt;
+    color: white;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+section#contact-section a {
+    color: white;
+}
+
+
+
+
+
+
+section#contact-section #contact-form {
+    padding: 1em;
+    border: 2px solid white;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
+
+section#contact-section #contact-form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-bottom: 0.5em;
+}
+
+section#contact-section #contact-form fieldset.horizontal-fieldset {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Abstand zwischen Label und Checkbox generieren */
+section#contact-section #contact-form fieldset.horizontal-fieldset label {
+    margin-left: 1em;
+}
+
+
+section#contact-section #contact-form fieldset label {
+    color: white;
+}
+
+section#contact-section #contact-form fieldset input {
+    width: 20em;
+    height: 2em;
+}
+
+section#contact-section #contact-form fieldset input[type="checkbox"] {
+    width: 1em;
+    height: 1em;
+}
+
+/* Textfeld fuer Nachricht nicht Groessen-verstellbar */
+section#contact-section #contact-form fieldset textarea {
+    resize: none;
+}
+
+section#contact-section #contact-form button {
+    height: 2em;
+    width: 50%;
+}
+
+footer {
+    height: 10vh;
+    
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li {
+    color: white;
+    
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+
+/* Smartphone */
+
+@media screen and (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav ul li a {
+        padding: 1em;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .full-size-section {
+        flex-direction: column;
+    }
+    
+    #intro-section.full-size-section h1 {
+        font-size: 26pt;
+    }
+
+    #intro-section.full-size-section a div span {
+        width: 10%;
+    }
+
+    section#work-section h2 {
+        font-size: 26pt;
+    }
+}
+
+
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+
+    section#about-section {
+        flex-direction: column;
+    }
+
+    div.half-wide-content {
+        width: 100%;
+    }
+
+    section#about-section p {
+        text-align: justify;
+    }
+
+    div#exhibition-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#contact-section h3 {
+        font-size: 30pt;
+    }
+}
+
+
+
+/* LARGE TABLET */
+@media screen and (max-width: 1200px) {
+
+
 }
