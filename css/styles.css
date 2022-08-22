@@ -50,9 +50,12 @@ header {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,27,88,1) 35%, rgb(63, 96, 102) 100%);
 }
 
+/* breite vom nav eingestellt */
+
 nav {
     width: 40%;
 }
+
 
 nav ul {
     list-style: none;
@@ -289,10 +292,7 @@ section#contact-section a {
     color: white;
 }
 
-
-
-
-
+/* Kontakt-Form-Einstellungen */
 
 section#contact-section #contact-form {
     padding: 1em;
@@ -340,6 +340,11 @@ section#contact-section #contact-form button {
     width: 50%;
 }
 
+section#contact-section h3::before {
+    font-family: "FontAweSome";
+    content: "\f4fb";
+}
+
 /* Footer-Einstellungen */
 
 footer {
@@ -355,12 +360,13 @@ footer ul {
 
 footer ul li {
     color: white;
-    
+    font-size: 14pt; 
 }
 
 footer ul li a {
     color: white;
     text-decoration: none;
+    
 }
 
 /* ------------- MEDIA QUERIES ------------- */
