@@ -10,4 +10,7 @@ This Repo  is for my Portfolio
 
 +wie würde ich die seite in der zukunft gestalten wollen?
 
-+würde mehr mit images arbeiten und auch gern animationseffekte 
++würde mehr mit images arbeiten und auch gern animationseffekte und auch farblich könnte ich mir erweiterungen vorstellen
+
++(Docs/wireframes/wireframe-mobile-version2.drawio.png)
++(Docs/wireframes/wireframe-desktop-version2.dawio.png)

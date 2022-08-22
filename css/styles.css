@@ -148,7 +148,7 @@ h3 {
 }
 
 section#about-section div#about-img {
-    background-image: url(../img/967388_transformers-decepticons-logo-wallpaper-images_1203x942_h.webp);
+    background-image: url(../img/IMG-20200303-WA0003.jpg);
     background-size: cover;
     background-position: center;
     
@@ -264,7 +264,7 @@ div#exhibition-grid div.exhibition-item:nth-child(3) {
     background-position: center;
 }
 
-
+/* contact-section-Einstellungen */
 
 
 section#contact-section {
@@ -314,10 +314,6 @@ section#contact-section #contact-form fieldset.horizontal-fieldset {
     align-items: center;
 }
 
-/* Abstand zwischen Label und Checkbox generieren */
-section#contact-section #contact-form fieldset.horizontal-fieldset label {
-    margin-left: 1em;
-}
 
 
 section#contact-section #contact-form fieldset label {
@@ -343,6 +339,8 @@ section#contact-section #contact-form button {
     height: 2em;
     width: 50%;
 }
+
+/* Footer-Einstellungen */
 
 footer {
     height: 10vh;
